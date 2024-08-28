@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,250;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
     font-family: 'Poppins' , Arial, Helvetica, sans-serif;
@@ -127,10 +127,81 @@ nav a:hover::before{
     background-color: black;
     width: 100%;
     height: 100%;
+     /*to be deleted*/
+     display: none;
 }
 
 .loader video{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 .modes{
+    background-color: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(5px);
+    border-radius: 3vw;
+    filter: drop-shadow(0 0 25px rgba(246, 218, 79, 0.992));
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.modes .m{
+    height: 72%;
+    border-radius: 3vw;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(246, 218, 79, 0.992);
+    padding: 3rem 2rem;
+}
+.m .img_top{
+    width: 100%;
+    height: 48%;
+    border-radius: 1vw;
+}
+
+.m .img_top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.m .txt_btm{
+    height: 48%;
+    width: 100%;
+    border-radius: 1vw;
+    text-align: center;
+}
+.m .txt_btm h1{
+    font-size: 3vw;
+}
+
+.m .txt_btm p {
+    margin-top: 20px;
+    font-size: .8vw;
+    padding: 0 2vw;
+}
+
+.m2 .img_top img{
+    object-fit: scale-down;
+}
+.m3 .img_top img{
+    object-fit: contain;
 }
