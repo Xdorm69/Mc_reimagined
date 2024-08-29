@@ -202,6 +202,107 @@ nav a:hover::before{
 .m2 .img_top img{
     object-fit: scale-down;
 }
+
 .m3 .img_top img{
     object-fit: contain;
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.r_top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 1%;
+}
+.r_btm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: green;
+    width: 80%;
+    height: 80%;
+    margin: 1%;
+}
+
+.reviews .r{
+    width: 45%;
+    height: 90%;
+    border-radius: 2vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vw ;
+    align-items: center;
+}
+.r_pic{
+    width: 40%;
+    height: 90%;
+    background-color: aquamarine;
+    border-radius: 2vw;
+}
+
+.r_pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vw;
+}
+
+.r1 img{
+    object-position: 10% 0;
+}
+
+.r3 img{
+    object-position: 10% 0;
+}
+
+.r4 img{
+    
+}
+
+.r_txt{
+    width: 55%;
+    height: 90%;
+    background-color: blue;
+    margin-left: 29px;
+    border-radius: 2vw;
+}
+
+.r_txt {
+    padding: 1.5vw;
+    text-align: center;
+}
+
+.r_txt h1{
+    font-size: 2vw;
+}
+.r_txt p{
+    font-size: 1vw;
+    margin-top: 10%;
 }
