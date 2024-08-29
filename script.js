@@ -1,35 +1,35 @@
 //GSAP
 
-// let tl = gsap.timeline();
-// tl.to(".loader" , {
-//     top:"-100%",
-//     duration:.6,
-//     delay:3,
-// })
-// tl.from(".n_right li" , {
-//     y:100,
-//     opacity:0,
-//     stagger:.2,
-//     duration:.7,
-// } , "a")
+let tl = gsap.timeline();
+tl.to(".loader" , {
+    top:"-100%",
+    duration:.6,
+    delay:3,
+})
+tl.from(".n_right li" , {
+    y:100,
+    opacity:0,
+    stagger:.2,
+    duration:.7,
+} , "a")
 
-// tl.from(".p_img img" , {
-//     x:-500,
-//     duration:1,
-//     opacity:0,
-// } , "a")
+tl.from(".p_img img" , {
+    x:-500,
+    duration:1,
+    opacity:0,
+} , "a")
 
-// tl.from(".p_text h1" , {
-//     y:400,
-//     opacity:0,
-//     duration:.5,
-// } , "a")
+tl.from(".p_text h1" , {
+    y:400,
+    opacity:0,
+    duration:.5,
+} , "a")
 
-// tl.from(".p_text p" , {
-//     y:200,
-//     opacity:0,
-//     duration:.5,
-// })
+tl.from(".p_text p" , {
+    y:200,
+    opacity:0,
+    duration:.5,
+})
 
 let tl2 = gsap.timeline();
 tl2.from(".page2 .modes" , {
@@ -41,7 +41,7 @@ tl2.from(".page2 .modes" , {
         trigger:'.page2',
         start:'top 50%',
         end: 'end 10%',
-        markers:true,
+        // markers:true,
         scrub:2,
     
     }
@@ -57,7 +57,7 @@ tl2.from(".page2 .m" , {
         trigger:'.page2',
         start:'top 50%',
         end: 'end 10%',
-        markers:true,
+        // markers:true,
         scrub:2,
     
     }
@@ -73,7 +73,7 @@ tl2.from(".page2 .m img" , {
         trigger:'.page2',
         start:'top 50%',
         end: 'end 10%',
-        markers:true,
+        // markers:true,
         scrub:2,
     
     }
@@ -91,9 +91,25 @@ tl2.from(".page2 .m .txt_btm" , {
         trigger:'.page2',
         start:'top 50%',
         end: 'end 10%',
-        markers:true,
+        // markers:true,
         scrub:2,
     
     }
 })
 
+let tl3 = gsap.timeline();
+
+tl3.from(".r" , {
+    x:100,
+    duration:1,
+    opacity:0,
+    stagger:.6,
+    scrollTrigger:{
+        scrub:2,
+        start:'top 60%',
+        end: 'end 10%',
+        scroller:"body",
+        trigger:'.page3',
+        markers:true,
+    }
+})

@@ -37,7 +37,7 @@ nav{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    
 }
 .n_right ul {
     list-style: none;
@@ -68,7 +68,7 @@ nav a:hover::before{
 }
 
 .page1{
-    padding: 3rem 4rem;
+    padding: 3rem 1rem;
     height: 100vh;
     width: 100%;
     background-color: rgb(27, 26, 26);
@@ -83,8 +83,8 @@ nav a:hover::before{
 }
 
 .p_img{
-    width: 40%;
-    height: 80%;
+    width: 100%;
+    height:80%;
     position: relative;
     margin-left: 160px;
     margin-top: 50px;
@@ -104,7 +104,7 @@ nav a:hover::before{
     position: relative;
     margin-right: 160px;
     margin-top: 50px;
-    width: 40%;
+    width: 35%;
     height: 80%;
     padding: 6vw .8vw;
 }
@@ -232,7 +232,6 @@ nav a:hover::before{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: green;
     position: relative;
     width: 80%;
     height: 80%;
@@ -243,7 +242,6 @@ nav a:hover::before{
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    background-color: green;
     width: 80%;
     height: 80%;
     margin: 1%;
@@ -253,7 +251,9 @@ nav a:hover::before{
     width: 45%;
     height: 90%;
     border-radius: 2vw;
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.619);
+    filter: drop-shadow(0 0 20px white);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-evenly;
     padding: 1vw ;
@@ -262,7 +262,6 @@ nav a:hover::before{
 .r_pic{
     width: 40%;
     height: 90%;
-    background-color: aquamarine;
     border-radius: 2vw;
 }
 
@@ -289,7 +288,6 @@ nav a:hover::before{
 .r_txt{
     width: 55%;
     height: 90%;
-    background-color: blue;
     margin-left: 29px;
     border-radius: 2vw;
 }
