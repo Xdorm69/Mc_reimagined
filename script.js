@@ -101,6 +101,22 @@ let tl3 = gsap.timeline();
 
 tl3.from(".r" , {
     x:100,
+    scale:0.5,
+    duration:1,
+    opacity:0,
+    stagger:.6,
+    scrollTrigger:{
+        scrub:2,
+        start:'top 60%',
+        end: 'end 10%',
+        scroller:"body",
+        trigger:'.page3',
+        markers:true,
+    }
+})
+tl3.from(".r_txt" , {
+    x:100,
+    scale:0,
     duration:1,
     opacity:0,
     stagger:.6,

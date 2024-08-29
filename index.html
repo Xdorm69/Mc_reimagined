@@ -16,7 +16,8 @@
         <video autoplay muted src="Assets/Loader/render/Loader.mp4"></video>
     </div>
     <div class="main">
-        <nav>
+        <header>
+            <nav>
             <div class="n_left">
                 <div class="logo">
                     <img src="https://pngimg.com/uploads/mcdonalds/mcdonalds_PNG21.png" alt="">
@@ -25,14 +26,15 @@
             <div class="n_right">
                 <ul>
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#SERVICES">SERVICES</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
                     <li><a href="#drive-thru">DRIVE-THRU</a></li>
                 </ul>
             </div>
         </nav>
+        </header>
         </div>
-        <div class="page1">
+        <div id="home" class="page1">
             <div class="p_img">
                 <img src="Assets/pngwing.com.png" alt="">
             </div>
@@ -41,7 +43,7 @@
                 <p>McDonald's, founded in 1940, is a global fast-food giant renowned for its consistent menu and quick service. With its iconic golden arches and offerings like the Big Mac and fries, it has become a symbol of fast-food culture worldwide. The company’s success lies in its ability to adapt to diverse markets while maintaining a recognizable brand identity. McDonald's also emphasizes innovation, with a focus on improving customer experience through technology and sustainability initiatives</p>
             </div>
         </div>
-        <div class="page2">
+        <div id="SERVICES" class="page2">
             <div class="modes">
                 <div class="m m1">
                     <div class="img_top">
@@ -53,6 +55,18 @@
                             Lettuce, tomato, layers of fun,
                             Cheese melting perfectly, a taste so grand,
                             Every bite a delight, crafted by hand.</p>
+                    </div>
+                </div>
+                <div class="m m3">
+                    <div class="img_top">
+                        <img src="Assets/3d-Alarm-Clock--12.png" alt="">
+                    </div>
+                    <div class="txt_btm">
+                        <h1>Quick!</h1>
+                        <p>Rushing to your door with speedy flair,
+                            Hot and fresh, delivered with care,
+                            Moments saved with every swift run,
+                            Quick delivery brings joy and yum.</p>
                     </div>
                 </div>
                 <div class="m m2">
@@ -68,21 +82,9 @@
                             A savory treat that’s hard to restrain.</p>
                     </div>
                 </div>
-                <div class="m m3">
-                    <div class="img_top">
-                        <img src="Assets/3d-Alarm-Clock--12.png" alt="">
-                    </div>
-                    <div class="txt_btm">
-                        <h1>Quick!</h1>
-                        <p>Rushing to your door with speedy flair,
-                            Hot and fresh, delivered with care,
-                            Moments saved with every swift run,
-                            Quick delivery brings joy and yum.</p>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="page3">
+        <div id="reviews" class="page3">
             <div class="reviews">
                 <div class="r_top">
                     <div class="r r1">
@@ -92,6 +94,9 @@
                         <div class="r_txt">
                             <h1>Jackson Wilson</h1>
                             <p>McDonald's is a global fast-food giant that has become synonymous with quick, convenient meals. The chain offers a wide variety of menu options, from classic burgers and fries to newer items like salads and specialty coffee drinks</p>
+                            <div class="stars">
+                                <img src="Assets/stars.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="r r2">
@@ -101,6 +106,9 @@
                         <div class="r_txt">
                             <h1>Emma Johnson</h1>
                             <p>McDonald's is a reliable choice for a quick and convenient meal. It's not gourmet dining, but it doesn’t pretend to be. If you're in the mood for comfort food that you can grab on the go, McDonald's is hard to beat.</p>
+                            <div class="stars">
+                                <img src="Assets/stars.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,7 +119,10 @@
                         </div>
                         <div class="r_txt">
                             <h1>Olivia Brown</h1>
-                            <p>McDonald's is a reliable go-to for fast, affordable meals. The food is consistent, with classics like the Big Mac and crispy fries always hitting the spot. Service is quick, and the modern ambiance makes for a comfortable experience.</p>
+                            <p>McDonald's is a reliable go-to for fast, affordable meals. The food is consistent, with classics like the Big Mac and crispy fries always hitting the spot. Service is quick!</p>
+                            <div class="stars">
+                                <img src="Assets/stars.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="r r4">
@@ -120,13 +131,19 @@
                         </div>
                         <div class="r_txt">
                             <h1>Saurav Singh</h1>
-                            <p>At Mcdonald's I received a well ambient environment with good men around me. I tried their iced coffee and felt quite good. I received good service at the index and didn't had to stand a long time in the queue. After, had a happy meal with time well spent.
+                            <p>At Mcdonald's I received a well ambient environment with good men around me. I tried their iced coffee and felt quite good. I received good service at the index and didn't had to stand a long time in the queue.
                             </p>
+                            <div class="stars">
+                                <img src="Assets/stars.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <h1>AMITOJ</h1>
+        </footer>
     </div>
     <!--GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
