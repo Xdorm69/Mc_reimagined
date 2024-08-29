@@ -4,7 +4,7 @@ let tl = gsap.timeline();
 tl.to(".loader" , {
     top:"-100%",
     duration:.6,
-    delay:3,
+    delay:4,
 })
 tl.from(".n_right li" , {
     y:100,
@@ -29,7 +29,8 @@ tl.from(".p_text p" , {
     y:200,
     opacity:0,
     duration:.5,
-})
+    delay:.5,
+} , "a")
 
 let tl2 = gsap.timeline();
 tl2.from(".page2 .modes" , {
@@ -40,7 +41,7 @@ tl2.from(".page2 .modes" , {
         scroller:'body',
         trigger:'.page2',
         start:'top 50%',
-        end: 'end 10%',
+        end: 'end 25%',
         // markers:true,
         scrub:2,
     
@@ -56,7 +57,7 @@ tl2.from(".page2 .m" , {
         scroller:'body',
         trigger:'.page2',
         start:'top 50%',
-        end: 'end 10%',
+        end: 'end 25%',
         // markers:true,
         scrub:2,
     
@@ -72,7 +73,7 @@ tl2.from(".page2 .m img" , {
         scroller:'body',
         trigger:'.page2',
         start:'top 50%',
-        end: 'end 10%',
+        end: 'end 25%',
         // markers:true,
         scrub:2,
     
@@ -90,7 +91,7 @@ tl2.from(".page2 .m .txt_btm" , {
         scroller:'body',
         trigger:'.page2',
         start:'top 50%',
-        end: 'end 10%',
+        end: 'end 25%',
         // markers:true,
         scrub:2,
     
@@ -119,7 +120,7 @@ tl3.from(".r_txt" , {
     scale:0,
     duration:1,
     opacity:0,
-    stagger:.6,
+    stagger:.5,
     scrollTrigger:{
         scrub:2,
         start:'top 60%',

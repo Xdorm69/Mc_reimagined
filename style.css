@@ -35,6 +35,7 @@ nav{
     background-image: linear-gradient(to right , white , rgba(255, 221, 0, 0.553));
     filter: drop-shadow(0 0 26px rgba(254, 208, 25, 0.811));
     z-index: 9;
+    overflow: hidden;
 }
 .n_left .logo{
     height: 60px;
@@ -134,12 +135,12 @@ nav a:hover::before{
 
 .loader{
     position: absolute;
-    z-index: 11;
+    z-index: 999;
     background-color: black;
     width: 100%;
     height: 100%;
      /*to be deleted*/
-     display: none;
+     /* display: none; */
 }
 
 .loader video{
@@ -178,7 +179,8 @@ nav a:hover::before{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(246, 218, 79, 0.992);
+    background-image: radial-gradient(rgb(252, 253, 157) , rgba(246, 218, 79, 0.992));
+    /* background-color: rgba(246, 218, 79, 0.992); */
     padding: 3rem 2rem;
 }
 .m .img_top{
@@ -215,7 +217,10 @@ nav a:hover::before{
 }
 
 .m3 .img_top img{
-    object-fit: contain;
+    position: relative;
+    top: -2%;
+    height: 110%;
+    object-fit: cover;
 }
 
 .page3{
@@ -262,14 +267,15 @@ nav a:hover::before{
     width: 45%;
     height: 90%;
     border-radius: 2vw;
-    background-color: rgba(250, 235, 215, 0.619);
-    filter: drop-shadow(0 0 20px white);
+    background-color: rgb(246, 218, 79, 0.992);
+    filter: drop-shadow(0 0 20px rgba(246, 218, 79, 0.992));
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-evenly;
     padding: 1vw ;
     align-items: center;
 }
+
 .r_pic{
     width: 40%;
     height: 90%;
@@ -358,7 +364,7 @@ nav a:hover::before{
     position: absolute;
     height: 2px;
     width: 0%;
-    background-image: linear-gradient(to right , blue , purple);
+    background-image: linear-gradient(to right , blue , red);
     transition: .5s;
     left: 0;
     bottom: 0;
@@ -366,7 +372,7 @@ nav a:hover::before{
 
 .r_txt h1:hover::before{
     width: 100%;
-    filter:drop-shadow(0 0 20px blue);
+    filter:drop-shadow(0 0 20px rgb(255, 0, 4));
 }
 
 .page1{
@@ -389,14 +395,100 @@ header {
     z-index: 10;
     filter: drop-shadow(0 0 200px black);
 }
+
 footer{
+
     position: fixed;
+    background-color: #0E0E0C;
     bottom: 0;
     z-index: 1;
     width: 100%;
-    height: 50vh;
+    height: 51vh;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1vw 2vw;
+
 }
+footer h1{
+    font-size: 5vw;
+    color: #fff;
+    cursor: pointer;
+}
+
+.amitoj{
+    width: 30%;
+    height: 80%;
+    background-color: rgb(52, 178, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    flex-direction: column;
+    transition: all .5s ease;
+}
+
+.amitoj:hover{
+    width: 700px;
+    background-color: rgb(52, 116, 219);
+}
+
+.om{
+    width: 30%;
+    height: 80%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    transition: all .5s ease;
+}
+
+.om:hover{
+    width: 700px;
+    background-color: rgb(100, 57, 57);
+}
+
+.hemant{
+    width: 30%;
+    height: 80%;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    flex-direction: column;
+    transition: all .5s ease;
+}
+
+.hemant:hover{
+    width: 700px;
+    background-color: pink;
+}
+
+.handles{
+    width: 90%;
+    height: 20%;
+    top: 16%;
+    position: relative;
+    background-color: rgba(128, 0, 128, 0.214);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.374) , -5px -10px 20px rgba(255, 255, 255, 0.382);
+    border-radius: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.handles a img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.handles a{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.327));
+}
+
+
