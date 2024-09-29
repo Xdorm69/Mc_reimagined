@@ -112,7 +112,7 @@ tl3.from(".r" , {
         end: 'end 10%',
         scroller:"body",
         trigger:'.page3',
-        markers:true,
+        // markers:true,
     }
 })
 tl3.from(".r_txt" , {
@@ -127,6 +127,6 @@ tl3.from(".r_txt" , {
         end: 'end 10%',
         scroller:"body",
         trigger:'.page3',
-        markers:true,
+        // markers:true,
     }
 })

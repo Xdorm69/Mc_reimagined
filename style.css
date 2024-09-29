@@ -64,6 +64,10 @@ nav{
     padding: .3vw 0.2vw;
 }
 
+.n_right I{
+    display: none;
+}
+
 nav a::before{
     content: '';
     position: absolute;
@@ -521,4 +525,210 @@ footer h1{
 
 .page4 .content{
     height: 40%;
+}
+
+.page5{
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    background-image: url(Assets/bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50vh;
+    background-repeat: no-repeat;
+}
+
+.page5 .data-container form{
+    position: relative;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: green; */
+}
+
+.data-container{
+    background-color: #F6D94F;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #e9dcb8;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    
+}
+
+.page5 .data-container .left-cont{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.page5 .data-container .left-cont button{
+    border: none;
+    padding: .8em;
+    border-radius: 30px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page5 .data-container .left-cont h1{
+    font-weight: 700;
+    width: 300px;
+    padding-left: .5em;
+    color: black;
+    font-size: 45px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+.page5 .data-container .left-cont h1::before{
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    border-radius: 30px;
+    left: 5px;
+    bottom: 0;
+    content: '';
+    background-color: black;
+
+}
+
+.page5 .data-container .left-cont button img{
+    position: relative;
+    bottom: 3px;
+    filter: invert();
+}
+
+.page5 .data-container .left-cont button{
+    display: flex;
+    font-family: 'Mc';
+    gap: 10px;
+    transition: .3s;
+    width: 200px;
+    /* background: linear-gradient(to top right , rgb(228, 217, 63) , orange); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.408);
+}
+
+.page5 .data-container .left-cont button:hover{
+    background-color: rgb(203, 201, 201);
+}
+.contact-inputs{
+    font-family: 'Mc',Arial, Helvetica, sans-serif;
+    width: 400px;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.408);
+    border: none;
+    border-radius: 30px;
+    padding: 1em;
+
+}
+
+form .contact-inputs:nth-child(5){
+    height: 300px;
+    resize: none;
+}
+
+.page5 .data-container .right-cont{
+    width:68%;
+    /* background-color: green; */
+    height: 100%;
+}
+
+
+.page5 .data-container .right-cont img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    /* background-color: blue; */
+    
+}
+
+
+@media only screen and (max-width: 400px){
+    .loader{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .n_right{
+        display: none;
+    }
+
+    nav{
+        padding: 0 3vw;
+        height: 80px;
+    }
+
+    .logo img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .page1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p_img{
+        left: -25%;
+        bottom: -0%;
+    }
+
+    .p_text{
+        left: 22%;
+        top: -8%;
+        width: 100%;
+    }
+
+    .p_text h1{
+        text-align: center;
+        font-size: 6vh;
+        top: 10%;
+    }
+
+    .p_text p{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 2vh;
+        width: 100%;
+    }
+
+    .n_right i{
+        z-index: 99;
+        display: flex;
+        color: black;
+        font-size: 3vh;
+        position: absolute;
+    }
+
+    .page2 .modes{
+        flex-direction: column;
+        background-color: #FFC423;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+    }
+
+    .modes .m{
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+
 }
