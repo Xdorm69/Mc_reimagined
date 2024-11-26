@@ -9,16 +9,26 @@
     src: url(Assets/Loader/McDonalds-Font/Speedee-Bold.woff2);
 }
 
+::-webkit-scrollbar-track {
+    background: black;  /* Light gray background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 9px;  /* Horizontal scrollbar thickness */
+    height: 1px; /* Vertical scrollbar thickness */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;      /* Darker gray */
+    border-radius: 10px;
+}
+
 body{
     font-family: 'Mc' , Arial, Helvetica, sans-serif;
 }
 
 /* to be deleted after locomotive on */
-
-html {
-    scroll-behavior: smooth;
-}
-
 
 a{
     text-decoration: none;
@@ -527,6 +537,109 @@ footer h1{
     height: 40%;
 }
 
+.counter{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 9;
+    bottom: 50vh;
+    color: white;
+    padding: 15px;
+    font-size: 3rem;
+}
+
+.counter .date{
+    padding-top: 4rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 7rem;
+}
+
+.counter .place{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+}
+
+.counter .place .happycustomers{
+    margin-bottom: 10rem;
+    font-size: 8rem;
+    border: 2px solid white;
+    padding: 1rem;
+    padding-inline: 4rem;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    animation: borderLoop 3s infinite;
+}
+
+@keyframes borderLoop {
+    0% {
+        border-color: orange;
+        box-shadow: 0 0 20px orange;
+    }
+    50% {
+        border-color: #e8da93;
+        box-shadow: 0 0 100px #e8da93;
+    }
+    100% {
+        border-color: orange;
+        box-shadow: 0 0 20px orange;
+    }
+}
+
+.counter .place .placebutton{
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    background-color: #F6D94F;
+    transition: .5s;
+    cursor: pointer;
+}
+.counter .bg{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.counter .bg video{
+    /* filter: blur(5px); */
+    transition: 1s;
+    scale: 1.3;
+    object-fit: cover;
+    object-position: center;
+    opacity: .2;
+    z-index: 0;
+
+}
+
+.myvid{
+    filter: blur(5px);
+}
+
+.overlay{
+    /* background: #999; */
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.placebutton:hover{
+    scale: 1.1;
+    color: white;
+    box-shadow: 0 0px 2px #FFC423;
+    box-shadow: 0 0px 20px #FFC423;
+    box-shadow: 0 0px 80px #FFC423;
+}
+
+#confetti{
+    mix-blend-mode: screen;
+}
 .page5{
     position: relative;
     z-index: 10;
@@ -552,7 +665,7 @@ footer h1{
 
 .data-container{
     background-color: #F6D94F;
-    width: 80%;
+    width: 80%; 
     height: 80%;
     border-radius: 20px;
     box-shadow: 0 0 20px #e9dcb8;

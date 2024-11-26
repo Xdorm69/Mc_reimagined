@@ -1,3 +1,70 @@
+// This ensures the page starts at the top after a reload
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+
+
+//Lenis Scroll 
+// Initialize a new Lenis instance for smooth scrolling
+const lenis = new Lenis();
+
+// Listen for the 'scroll' event and log the event data to the console
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
+
+// Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+lenis.on('scroll', ScrollTrigger.update);
+
+// Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+// This ensures Lenis's smooth scroll animation updates on each GSAP tick
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+});
+
+// Disable lag smoothing in GSAP to prevent any delay in scroll animations
+gsap.ticker.lagSmoothing(0);
+
+//date and time
+
+const datePage = document.querySelector('.date');
+setInterval(() => {
+  const currentDate = new Date;
+  const hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+  const seconds = currentDate.getSeconds();
+  datePage.innerHTML = `${hours}:${minutes}:${seconds}`;
+}, 1000);
+var video = document.querySelector('#myvid');
+let confettiVid = document.querySelector('#confetti')
+const orderButton = document.querySelector('.placebutton');
+let toggleCount = 0;
+
+orderButton.addEventListener('click', (e) => {
+    if (toggleCount % 2 == 0) {
+        video.style.opacity = 1;        
+        toggleCount++;
+    }
+    else{
+        video.style.opacity = 0;
+        toggleCount++;
+    }
+});
+
+const happyCounter = document.querySelector('.happycustomers')
+// Retrieve the count from localStorage
+let visitCount = localStorage.getItem('visitCount');
+
+if (!visitCount) {
+    visitCount = 0; // Initialize count if not set
+}
+
+// Increment and store the count
+visitCount++;
+localStorage.setItem('visitCount', visitCount);
+
+// Display the count
+happyCounter.innerHTML = `Happy Customers : ${visitCount*11 +2}`
 //GSAP
 
 let tl = gsap.timeline();
@@ -130,3 +197,5 @@ tl3.from(".r_txt" , {
         // markers:true,
     }
 })
+
+
